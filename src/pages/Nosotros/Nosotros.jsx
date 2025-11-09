@@ -2,8 +2,8 @@ import "./Nosotros.css";
 export default function Nosotros() {
     return (
 
-        <main class="main-nosotros">
-            <section class="sobre-nosotros">
+        <main className="main-nosotros">
+            <section className="sobre-nosotros">
                 <h2>Sobre Nosotros</h2>
                 <p>Casacas FC nació por la pasión del fútbol y la nostalgia de coleccionar camisetas únicas. Desde nuestros inicios, nos especializamos en traer modelos clásicos, actuales y difíciles de conseguir de todo el mundo.</p>
 
