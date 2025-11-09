@@ -1,0 +1,13 @@
+/* Footer */
+.footer {
+  background-color:  #111;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-info p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+}

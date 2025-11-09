@@ -1,0 +1,149 @@
+.item-list {
+  max-width: 1300px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.precio {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #101820;
+  margin-top: 0.5rem;
+  background-color: #f0c80833;
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+}
+
+/* Contador */
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+
+.contador-btn {
+  background-color: #101820;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 30px;
+  height: 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contador-btn:hover {
+  background-color: #f0c808;
+  color: #000;
+}
+
+.contador span {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Botones */
+.botones-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.btn-detalle,
+.btn-carrito {
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn-detalle {
+  background-color: #101820;
+  color: #fff;
+}
+
+.btn-carrito {
+  background-color: #f0c808;
+  color: #000;
+}
+
+.btn-detalle:hover {
+  background-color: #303841;
+}
+
+.btn-carrito:hover {
+  background-color: #ffe047;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .item-list {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1rem;
+  }
+
+  .card img {
+    height: 140px;
+  }
+
+  .card h3 {
+    font-size: 1rem;
+  }
+
+  .botones-card {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-list {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}

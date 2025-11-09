@@ -1,0 +1,816 @@
+[
+  {
+    "id": 1,
+    "nombre": "Boca Juniors",
+    "liga": "Liga Profesional Argentina",
+    "anio": 2025,
+    "marca": "Adidas",
+    "stock": 45,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Argentina/Boca_Juniors.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "River Plate",
+    "liga": "Liga Profesional Argentina",
+    "anio": 2025,
+    "marca": "Adidas",
+    "stock": 50,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Argentina/River_Plate.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "Newells Old Boys",
+    "liga": "Liga Profesional Argentina",
+    "anio": 2025,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Argentina/Newells.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "Rosario Central",
+    "liga": "Liga Profesional Argentina",
+    "anio": 2025,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Argentina/Central.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "Huracan",
+    "liga": "Liga Profesional Argentina",
+    "anio": 2025,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Argentina/Huracan.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "Independiente",
+    "liga": "Liga Profesional Argentina",
+    "anio": 2025,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Argentina/Independiente.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "Racing",
+    "liga": "Liga Profesional Argentina",
+    "anio": 2025,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Argentina/Racing.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "Lanus",
+    "liga": "Liga Profesional Argentina",
+    "anio": 2025,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Argentina/Lanus.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "San Lorenzo",
+    "liga": "Liga Profesional Argentina",
+    "anio": 2025,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Argentina/San_Lorenzo.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "Union",
+    "liga": "Liga Profesional Argentina",
+    "anio": 2025,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Argentina/Union.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "Atletico Madrid",
+    "liga": "LaLiga España",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Espaniola/Atletico_Madrid.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "Barcelona",
+    "liga": "LaLiga España",
+    "anio": 2025,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Espaniola/Barcelona.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "Real Betis",
+    "liga": "LaLiga España",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Espaniola/Real_Betis.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "Real Madrid",
+    "liga": "LaLiga España",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Espaniola/Real_Madrid.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "Sevilla",
+    "liga": "LaLiga España",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Espaniola/Sevilla.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "Valencia",
+    "liga": "LaLiga España",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Espaniola/Valencia.jpg"
+  },
+  {
+    "id": 17,
+    "nombre": "Villarreal",
+    "liga": "LaLiga España",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Espaniola/Villarreal.jpg"
+  },
+  {
+    "id": 18,
+    "nombre": "Arsenal",
+    "liga": "Liga Inglesa",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Inglesa/Arsenal.jpg"
+  },
+  {
+    "id": 19,
+    "nombre": "Aston Villa",
+    "liga": "Liga Inglesa",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Inglesa/Aston_Villa.jpg"
+  },
+  {
+    "id": 20,
+    "nombre": "Chelsea",
+    "liga": "Liga Inglesa",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Inglesa/Chelsea.jpg"
+  },
+  {
+    "id": 21,
+    "nombre": "Everton",
+    "liga": "Liga Inglesa",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Inglesa/Everton.jpg"
+  },
+  {
+    "id": 22,
+    "nombre": "Liverpool",
+    "liga": "Liga Inglesa",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Inglesa/Liverpool.jpg"
+  },
+  {
+    "id": 23,
+    "nombre": "Manchester City",
+    "liga": "Liga Inglesa",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Inglesa/Manchester_City.jpg"
+  },
+  {
+    "id": 24,
+    "nombre": "Manchester United",
+    "liga": "Liga Inglesa",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Inglesa/Manchester_United.jpg"
+  },
+  {
+    "id": 25,
+    "nombre": "Tottennham",
+    "liga": "Liga Inglesa",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Liga-Inglesa/Tottenham.jpg"
+  },
+  {
+    "id": 26,
+    "nombre": "Alemania",
+    "liga": "Selecciones",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Selecciones/Alemania.jpg"
+  },
+  {
+    "id": 27,
+    "nombre": "Argentina",
+    "liga": "Selecciones",
+    "anio": 2026,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Selecciones/Argentina_2026.jpg"
+  },
+  {
+    "id": 28,
+    "nombre": "Brasil",
+    "liga": "Selecciones",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Selecciones/Brasil.jpg"
+  },
+  {
+    "id": 29,
+    "nombre": "Croacia",
+    "liga": "Selecciones",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Selecciones/Croacia.jpg"
+  },
+  {
+    "id": 30,
+    "nombre": "Francia",
+    "liga": "Selecciones",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Selecciones/Francia.jpg"
+  },
+  {
+    "id": 31,
+    "nombre": "Holanda",
+    "liga": "Selecciones",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Selecciones/Holanda.jpg"
+  },
+  {
+    "id": 32,
+    "nombre": "Inglaterra",
+    "liga": "Selecciones",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Selecciones/Inglaterra.jpg"
+  },
+  {
+    "id": 33,
+    "nombre": "Italia",
+    "liga": "Selecciones",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Selecciones/Italia.jpg"
+  },
+  {
+    "id": 34,
+    "nombre": "Portugal",
+    "liga": "Selecciones",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Selecciones/Portugal.jpg"
+  },
+  {
+    "id": 35,
+    "nombre": "Uruguay",
+    "liga": "Selecciones",
+    "anio": 2024,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Selecciones/Uruguay.jpg"
+  },
+  {
+    "id": 36,
+    "nombre": "Argentina Maradona 86",
+    "liga": "Historicas",
+    "anio": 1986,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Argentina_86.jpg"
+  },
+  {
+    "id": 37,
+    "nombre": "Argentina 78 Kempes",
+    "liga": "Historicas",
+    "anio": 1978,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Argentina_1978.jpg"
+  },
+  {
+    "id": 38,
+    "nombre": "Argentina Messi 2022",
+    "liga": "Historicas",
+    "anio": 2022,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Argentina_2022.jpg"
+  },
+  {
+    "id": 39,
+    "nombre": "Barcelona 2005",
+    "liga": "Historicas",
+    "anio": 2005,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Barcelona_05.jpg"
+  },
+  {
+    "id": 40,
+    "nombre": "Barcelona 1982 Maradona",
+    "liga": "Historicas",
+    "anio": 1982,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Barcelona_1982.jpg"
+  },
+  {
+    "id": 41,
+    "nombre": "Boca Junior 2001",
+    "liga": "Historicas",
+    "anio": 2001,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Boca_2001.jpg"
+  },
+  {
+    "id": 42,
+    "nombre": "Francia 1998",
+    "liga": "Historicas",
+    "anio": 1998,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Francia_98.jpg"
+  },
+  {
+    "id": 43,
+    "nombre": "Holanda 1988 Cruyff",
+    "liga": "Historicas",
+    "anio": 1988,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Holanda_1988.jpg"
+  },
+  {
+    "id": 44,
+    "nombre": "Independiente 1994",
+    "liga": "Historicas",
+    "anio": 1994,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Independiente_1994.jpg"
+  },
+  {
+    "id": 45,
+    "nombre": "Manchester United 2008",
+    "liga": "Historicas",
+    "anio": 2008,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Manchester_United_2008.jpg"
+  },
+  {
+    "id": 46,
+    "nombre": "Milan 2022",
+    "liga": "Historicas",
+    "anio": 2022,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Milan_22.jpg"
+  },
+  {
+    "id": 47,
+    "nombre": "Napoles 1987 Maradona",
+    "liga": "Historicas",
+    "anio": 1987,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Napoles_1987.jpg"
+  },
+  {
+    "id": 48,
+    "nombre": "Newells 1993 Maradona",
+    "liga": "Historicas",
+    "anio": 1993,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Nawells_1993.jpg"
+  },
+  {
+    "id": 49,
+    "nombre": "Real Madrid 1960 Di Stefano",
+    "liga": "Historicas",
+    "anio": 1960,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Real_Madrid_1960.jpg"
+  },
+  {
+    "id": 50,
+    "nombre": "Real Madrid 2007 Ronaldo",
+    "liga": "Historicas",
+    "anio": 2007,
+    "marca": "Adidas",
+    "stock": 10,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/Real_Madrid_2007.jpg"
+  },
+  {
+    "id": 51,
+    "nombre": "River Plate 1996",
+    "liga": "Historicas",
+    "anio": 1996,
+    "marca": "Adidas",
+    "stock": 20,
+    "talles": [
+      "M",
+      "L",
+      "XL"
+    ],
+    "precio": 74999,
+    "imagen": "../src/components/img/Historicas/River_1996.jpg"
+  },
+  {
+    "id": 52,
+    "nombre": "Roma 1999",
+    "liga": "Historicas",
+    "anio": 1999,
+    "marca": "Adidas",
+    "stock": 15,
+    "talles": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],"precio": 74999,
+    "imagen": "../src/components/img/Historicas/Roma_1999.jpg"
+  }
+]

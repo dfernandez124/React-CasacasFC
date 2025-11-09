@@ -1,0 +1,153 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #101820;
+  color: white;
+  padding: 1rem 3rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  flex-wrap: wrap;
+}
+
+.navbar-left .logo {
+  width: 150px;
+  height: auto;
+}
+
+.site-title {   
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  font-size: 3rem;
+  margin: 0 2rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-right a:hover {
+  color: #f0c808;
+}
+
+.cart-icon {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cart-icon:hover {
+  transform: scale(1.2);
+}
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.navbar-links a:hover {
+  color: #f5c518;
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #1b1b1b;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  list-style: none;
+  padding: 10px 0;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.dropdown-menu li {
+  padding: 8px 16px;
+}
+
+.dropdown-menu li a {
+  color: white;
+  display: block;
+}
+
+.dropdown-menu li:hover {
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .navbar-left .logo {
+    width: 60px;
+    margin-bottom: 0.5rem;
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+  }
+
+  .navbar-right {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-top: 0.5rem;
+  }
+
+  .navbar-right a {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+  }
+
+  .navbar-left .logo {
+    width: 50px;
+  }
+
+  .site-title {
+    font-size: 1.3rem;
+  }
+
+  .navbar-right {
+    gap: 1rem;
+  }
+
+  .cart-icon {
+    size: 22px;
+  }
+}

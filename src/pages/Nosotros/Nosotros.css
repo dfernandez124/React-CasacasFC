@@ -1,0 +1,41 @@
+.main-nosotros {
+    padding: 140px 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobre-nosotros {
+    text-align: left;
+    margin-top: 50px;
+}
+
+.sobre-nosotros h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sobre-nosotros h3 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.sobre-nosotros p,
+.sobre-nosotros li,
+.sobre-nosotros blockquote {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.sobre-nosotros ul {
+    padding-left: 1.5rem;
+    list-style: disc;
+}
+
+.sobre-nosotros blockquote {
+    border-left: 4px solid #28a745;
+    padding-left: 1rem;
+    color: #555;
+    font-style: italic;
+}
