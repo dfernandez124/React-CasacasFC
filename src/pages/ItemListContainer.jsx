@@ -1,6 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemCard from "../components/ItemCard/ItemCard";
+import Spinner from "../components/Spinner/Spinner";
+
+import { db } from "../Firebase/FireBase.js";
+import { collection, getDocs, query, where } from "firebase/firestore";
+
+const ligasMap = {
+  argentina: "Liga Profesional Argentina",
+  inglesa: "Liga Inglesa",
+  españa: "La Liga España",
+  selecciones: "Selecciones",
+  historicas: "Historicas",
+};
 
 const ItemListContainer = () => {
   const { ligaId } = useParams();
@@ -10,22 +22,34 @@ const ItemListContainer = () => {
   useEffect(() => {
     const fetchProductos = async () => {
       try {
-        const response = await fetch("/products.json");
-        if (!response.ok) throw new Error("Error al obtener productos");
+        let q;
 
-        const data = await response.json();
-
-        // Filtro de ligas
         if (!ligaId || ligaId === "todas") {
-          setProductos(data);
+          q = collection(db, "items");
         } else {
-          const filtrados = data.filter((p) =>
-            p.liga.toLowerCase().includes(ligaId.toLowerCase())
+          const ligaFirebase = ligasMap[ligaId];
+
+          if (!ligaFirebase) {
+            setProductos([]);
+            setLoading(false);
+            return;
+          }
+
+          q = query(
+            collection(db, "items"),
+            where("liga", "==", ligaFirebase)
           );
-          setProductos(filtrados);
         }
+        const querySnapshot = await getDocs(q);
+
+        const data = querySnapshot.docs.map(doc => ({
+          id: doc.id,
+          ...doc.data(),
+        }));
+
+        setProductos(data);
       } catch (error) {
-        console.error("Error al cargar productos:", error);
+        console.error("Error al cargar productos desde Firebase:", error);
       } finally {
         setLoading(false);
       }
@@ -34,23 +58,30 @@ const ItemListContainer = () => {
     fetchProductos();
   }, [ligaId]);
 
-  if (loading) {
-    return <p className="cargando">Cargando productos...</p>;
-  }
+  if (loading) return <Spinner />;
 
   return (
     <div className="item-list-container">
-      <h2 className="titulo-lista">
+      <div className="intro-banner">
+        <h2>Encontrá las mejores camisetas del fútbol mundial</h2>
+        <p>
+          Tenemos camisetas originales, retro y de selección, ¡todas al mejor precio!
+          Aprovechá nuestras ofertas y disfrutá del envío a todo el país.
+        </p>
+      </div>
+      <h2 className="item-list-title">
         {ligaId && ligaId !== "todas"
-          ? `Camisetas de la ${ligaId.charAt(0).toUpperCase() + ligaId.slice(1)}`
+          ? `Camisetas de ${ligaId}`
           : "Todas las camisetas"}
       </h2>
 
       <div className="item-list">
         {productos.length > 0 ? (
-          productos.map((prod) => <ItemCard key={prod.id} producto={prod} />)
+          productos.map(prod => (
+            <ItemCard key={prod.id} producto={prod} />
+          ))
         ) : (
-          <p>No se encontraron productos en esta categoría.</p>
+          <p>No se encontraron productos.</p>
         )}
       </div>
     </div>

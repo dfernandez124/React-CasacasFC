@@ -1,16 +1,138 @@
-# React + Vite
+# 📝 **README -- CasacasFC \| Ecommerce de Camisetas de Fútbol**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## ⚽ CasacasFC -- Ecommerce Fullstack con React + Firebase
 
-Currently, two official plugins are available:
+CasacasFC es un proyecto de ecommerce desarrollado como parte del curso
+de Desarrollo Web Fullstack.\
+Permite visualizar camisetas de fútbol de distintas ligas del mundo, ver
+sus detalles, agregarlas al carrito y realizar una compra completa con
+generación de orden en Firebase.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+------------------------------------------------------------------------
 
-## React Compiler
+## 🚀 Tecnologías utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   **React JS**\
+-   **Vite**\
+-   **React Router DOM**\
+-   **Firebase Firestore**\
+-   **Context API**\
+-   **CSS personalizado**\
+-   **Lucide-react**\
+-   **SweetAlert2**
 
-## Expanding the ESLint configuration
+------------------------------------------------------------------------
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Funcionalidades principales
+
+### 🛒 Carrito de compras
+
+-   Agregar productos\
+-   Control de cantidad\
+-   Vista del carrito\
+-   Total dinámico\
+-   Badge en navbar\
+-   Vaciar carrito
+
+### 🔥 Checkout completo
+
+-   Formulario del comprador\
+-   Crear orden en Firebase (colección `orders`)\
+-   Actualizar stock en Firebase (colección `items`)\
+-   Transacción con `runTransaction()`\
+-   Mostrar ID de orden\
+-   Vaciar carrito
+
+### 🏷 Listado de productos
+
+-   Datos desde Firestore\
+-   Filtrar por liga\
+-   Animaciones fade-in\
+-   Spinner de carga
+
+### 🎽 Detalle de producto
+
+-   Imagen grande\
+-   Precio, talles, stock\
+-   Agregar al carrito\
+-   Ruta dinámica
+
+------------------------------------------------------------------------
+
+## 📁 Colecciones de Firebase
+
+### **items**
+
+``` json
+{
+  "id": 1,
+  "nombre": "Boca Juniors",
+  "liga": "Liga Profesional Argentina",
+  "anio": 2025,
+  "precio": 74999,
+  "marca": "Adidas",
+  "stock": 45,
+  "talles": ["S", "M", "L", "XL"],
+  "imagen": "URL"
+}
+```
+
+### **orders**
+
+``` json
+{
+  "buyer": {
+    "nombre": "Juan",
+    "email": "juan@mail.com",
+    "telefono": "123",
+    "direccion": "Calle falsa"
+  },
+  "items": [
+    {
+      "id": "1",
+      "nombre": "Boca Juniors",
+      "precio": 74999,
+      "cantidad": 2
+    }
+  ],
+  "total": 149998,
+  "createdAt": "timestamp"
+}
+```
+
+------------------------------------------------------------------------
+
+## 🔗 Rutas del proyecto
+
+  Ruta               Descripción
+  ------------------ ------------------
+  `/`                Home
+  `/ligas/:ligaId`   Filtrar por liga
+  `/item/:id`        Detalle
+  `/cart`            Carrito
+  `/checkout`        Compra
+
+------------------------------------------------------------------------
+
+## 🛠 Instalación
+
+1.  Clonar repo\
+2.  `npm install`\
+3.  Crear `FireBase.js` con config\
+4.  `npm run dev`
+
+------------------------------------------------------------------------
+
+## 🤝 Autor
+
+Proyecto creado por **Daniel Fernández**.
+
+------------------------------------------------------------------------
+
+## ⭐ Mejoras posibles
+
+-   Auth con Firebase\
+-   Admin panel\
+-   Paginación\
+-   Dark mode\
+-   Favoritos

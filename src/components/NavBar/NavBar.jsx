@@ -3,8 +3,10 @@ import "./Navbar.css";
 import { ShoppingCart } from "lucide-react";
 import logo from "../img/Logotipo.png";
 import { Link } from "react-router-dom";
+import { useCart } from "../../context/CartContext";
 
 const Navbar = () => {
+  const { totalCantidad } = useCart();
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -34,8 +36,15 @@ const Navbar = () => {
           <li><Link to="/contacto">Contacto</Link></li>
           <li><Link to="/nosotros">Nosotros</Link></li>
 
-          <li className="cart-icon">
-            <ShoppingCart size={22} />
+          <li>
+            <Link to="/cart" className="cart-widget">
+              <div className="cart-icon">
+                <ShoppingCart size={22} />
+                {totalCantidad > 0 && (
+                  <span className="cart-badge">{totalCantidad}</span>
+                )}
+              </div>
+            </Link>
           </li>
         </ul>
       </div>

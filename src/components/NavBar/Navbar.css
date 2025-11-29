@@ -5,7 +5,7 @@
   background-color: #101820;
   color: white;
   padding: 1rem 3rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
   flex-wrap: wrap;
 }
 
@@ -14,7 +14,7 @@
   height: auto;
 }
 
-.site-title {   
+.site-title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -42,11 +42,14 @@
 .cart-icon {
   cursor: pointer;
   transition: transform 0.2s ease;
+  position: relative;
+  display: inline-block;
 }
 
 .cart-icon:hover {
   transform: scale(1.2);
 }
+
 .navbar-links {
   display: flex;
   align-items: center;
@@ -97,6 +100,17 @@
 
 .dropdown:hover .dropdown-menu {
   display: block;
+}
+
+.cart-badge {
+  background: red;
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
 }
 
 /* Responsive */

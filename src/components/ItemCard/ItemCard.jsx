@@ -2,15 +2,18 @@ import React, { useState } from "react";
 import "./ItemCard.css";
 import { Link } from "react-router";
 import ItemCount from "../ItemCount/ItemCount";
+import { useCart } from "../../context/CartContext";
 
 const ItemCard = ({ producto }) => {
   const [cantidad, setCantidad] = useState(1);
+  const { addToCart } = useCart();
+  const handleAddToCart = (cantidad) => {
+    addToCart(producto, cantidad);
 
-const agregarAlCarrito = (cantidad) => {
     Swal.fire({
-      title: `Agregaste ${cantidad} Camiseta(s) de ${producto.nombre}`,
+      title: `Agregaste ${cantidad} unidad(es) de ${producto.nombre}`,
       icon: "success",
-      draggable: true,
+      confirmButtonColor: "#111"
     });
   };
 
@@ -26,7 +29,7 @@ const agregarAlCarrito = (cantidad) => {
       <ItemCount
         stock={producto.stock}
         inicial={1}
-        onAdd={agregarAlCarrito}
+        onAdd={handleAddToCart}
       />
 
       <div className="botones-card">
