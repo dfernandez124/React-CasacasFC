@@ -5,7 +5,7 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import { Routes, Route } from "react-router-dom";
 import ItemDetail from "./pages/ItemDetail/ItemDetail.jsx";
-import NotFound from "./pages/NotFound.jsx";
+import NotFound from "./pages/NotFound/NotFound.jsx";
 import Contacto from "./pages/Contacto/Contacto.jsx";
 import Nosotros from "./pages/Nosotros/Nosotros.jsx";
 import Cart from "./pages/Cart/Cart.jsx";
