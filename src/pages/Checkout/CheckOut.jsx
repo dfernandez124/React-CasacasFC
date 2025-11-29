@@ -11,7 +11,7 @@ import {
   serverTimestamp,
 } from "firebase/firestore";
 
-import "./checkout.css";
+import "./CheckOut.css";
 
 const Checkout = () => {
   const { carrito, getTotal, clearCart } = useCart();
