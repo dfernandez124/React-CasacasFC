@@ -128,11 +128,3 @@ generación de orden en Firebase.
 Proyecto creado por **Daniel Fernández**.
 
 ------------------------------------------------------------------------
-
-## ⭐ Mejoras posibles
-
--   Auth con Firebase\
--   Admin panel\
--   Paginación\
--   Dark mode\
--   Favoritos
